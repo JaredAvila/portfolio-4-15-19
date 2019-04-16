@@ -116,4 +116,13 @@ i.downArrow {
         font-size: 1.7rem;
         margin-bottom: 50px;
     }
+    .aboutWrapper {
+        padding: 300px 0;
+    }
+    .skillsWrapper {
+        padding: 300px 0;
+    }
+    .projectsWrapper {
+        padding: 300px 0;
+    }
 }
