@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    font-size: 2.4rem;
+}
+
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/computer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#intro2 {
+    margin-bottom: 100px;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.socialLinks {
+    transition: all 250ms ease;
+}
+
+.socialLinks:hover {
+    color: white !important;
+}
+
+.downArrow {
+    position: absolute;
+    top: 90%;
+}
+
+i.downArrow {
+    font-size: 48pt;
+}
+
+/* about me section */
+
+.aboutWrapper {
+    padding: 300px;
+    background: url('../img/LogoMakr_6PSRnI.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* skills section */
+
+.skillsWrapper {
+    padding: 300px;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/coding.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* projects section */
+
+.projectsWrapper {
+    padding: 300px;
+}
+
+/* footer section */
+
+.footerText {
+    padding: 70px 20px
+}
+
+/* modal section */
+
+.modalWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(34, 34, 34);
+    border-radius: 6px;
+    align-items: center;
+}
+
+.modalWrapper img {
+    height: 70vh;
+    /* width: fit-content; */
+}
+
+.modalWrapper a {
+    margin: 20px;
+}
+
+/* Mobile styles */
+
+@media only screen and (max-width: 700px) {
+    .title {
+        font-size: 1.8rem !important;
+    }
+    #intro1 {
+        font-size: 2rem;
+    }
+    #intro2 {
+        font-size: 1.7rem;
+        margin-bottom: 50px;
+    }
+}

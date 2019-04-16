@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jared Avila - Full-Stack Deveoper</title>
+    <link rel="stylesheet" href="./css/materialize.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="primary-overlay">
+        <div class="navbar-fixed">
+          <!-- main nav -->
+          <nav class="transparent">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#home" class="brand-logo  title"
+                  ><i
+                    id="logo"
+                    class="material-icons deep-purple-text text-darken-2"
+                  >
+                    developer_board
+                  </i>
+                  Jared Avila</a
+                >
+                <a href="#" data-activates="mobile-nav" class="button-collapse">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                  <li>
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about">About</a>
+                  </li>
+                  <li>
+                    <a href="#testimonials">Projects</a>
+                  </li>
+                  <li>
+                    <a href="#about">Resume</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.jaredavila.com/avilamedia"
+                      class="btn deep-purple waves-effect waves-light"
+                      target="_blank"
+                      >Hire Me</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Side nav -->
+        <ul class="side-nav" id="mobile-nav">
+          <h4 class="deep-purple lighten-2 center">Jared Avila</h4>
+          <li>
+            <a class="divider"></a>
+          </li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#testimonials">Projects</a>
+          </li>
+          <li>
+            <a href="#about">Resume</a>
+          </li>
+          <li>
+            <a href="https://www.jaredavila.com/avilamedia">Hire Me</a>
+          </li>
+        </ul>
+        <div class="showcase">
+          <h2 id="intro1" class="white-text"></h2>
+          <h4 id="intro2" class="white-text"></h4>
+          <div class="socialMedia">
+            <a href="#"
+              ><i class="fab fa-github fa-3x deep-purple-text socialLinks"></i
+            ></a>
+            <a href="#"
+              ><i class="fab fa-linkedin fa-3x deep-purple-text socialLinks"></i
+            ></a>
+          </div>
+          <i class="material-icons white-text md-36 downArrow">
+            keyboard_arrow_down
+          </i>
+        </div>
+      </div>
+    </header>
+    <section id="about">
+      <div class="aboutWrapper">
+        <h1>About Me</h1>
+        <div id="message" class="white-text"></div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="skillsWrapper">
+        <h1 class="white-text">Skills</h1>
+        <div id="message" class="white-text"></div>
+      </div>
+    </section>
+    <section id="projects" class="grey lighten-3">
+      <div class="projectsWrapper">
+        <h1>Projects</h1>
+        <div id="message" class="white-text"></div>
+      </div>
+    </section>
+    <footer class="grey darken-3 white-text">
+      <p class="footerText">&copy; 2019 | Jared Avila</p>
+    </footer>
+
+    <!-- modal section -->
+    <!-- <section id="modal">
+      <div class="modalWrapper">
+        <img src="./img/resume.png" alt="" />
+        <a href="#" class="btn teal">Download</a>
+      </div>
+    </section> -->
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Init Sidenav
+        $(".button-collapse").sideNav();
+
+        // Init Scrollspy
+        $(".scrollspy").scrollSpy();
+
+        // ScrollFire
+        const options = [
+          {
+            selector: ".main-text",
+            offset: 0,
+            callback: function(el) {
+              Materialize.fadeInImage($(el));
+            }
+          },
+          {
+            selector: ".navbar-fixed",
+            offset: 1000,
+            callback: function() {
+              $("nav").removeClass("transparent");
+              $("nav").addClass("grey darken-1");
+            }
+          }
+        ];
+
+        Materialize.scrollFire(options);
+      });
+    </script>
+  </body>
+</html>
