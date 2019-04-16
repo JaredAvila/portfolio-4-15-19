@@ -17,17 +17,21 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" type="image/png" href="./portfolio/img/favicon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./portfolio/img/favicon.png"
+    />
   </head>
   <body>
     <header class="main-header">
       <div class="primary-overlay">
         <div class="navbar-fixed">
           <!-- main nav -->
-          <nav class="transparent">
+          <nav class="transparent" id="navbar">
             <div class="container">
               <div class="nav-wrapper">
-                <a href="#home" class="brand-logo  title"
+                <a href="#" class="brand-logo  title"
                   ><i
                     id="logo"
                     class="material-icons deep-purple-text text-darken-2"
@@ -41,16 +45,16 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                   <li>
-                    <a href="#home">Home</a>
+                    <a href="#">Home</a>
                   </li>
                   <li>
                     <a href="#about">About</a>
                   </li>
                   <li>
-                    <a href="#testimonials">Projects</a>
+                    <a href="#projects">Projects</a>
                   </li>
                   <li>
-                    <a href="#about">Resume</a>
+                    <a href="#resume">Resume</a>
                   </li>
                   <li>
                     <a
@@ -72,17 +76,17 @@
             <a class="divider"></a>
           </li>
           <li>
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
           </li>
 
           <li>
-            <a href="#testimonials">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#about">Resume</a>
+            <a href="#resume">Resume</a>
           </li>
           <li>
             <a href="https://www.jaredavila.com/avilamedia">Hire Me</a>
@@ -91,7 +95,7 @@
         <div class="showcase">
           <h2 id="intro1" class="white-text"></h2>
           <h4 id="intro2" class="white-text"></h4>
-          <div class="socialMedia">
+          <div class="socialMedia main-text">
             <a href="#"
               ><i class="fab fa-github fa-3x deep-purple-text socialLinks"></i
             ></a>
@@ -99,27 +103,102 @@
               ><i class="fab fa-linkedin fa-3x deep-purple-text socialLinks"></i
             ></a>
           </div>
-          <i class="material-icons white-text md-36 downArrow">
-            keyboard_arrow_down
-          </i>
+          <a href="#about"
+            ><i class="material-icons white-text md-36 downArrow">
+              keyboard_arrow_down
+            </i></a
+          >
         </div>
       </div>
     </header>
+    <!-- about me section -->
     <section id="about">
       <div class="aboutWrapper">
-        <h1>About Me</h1>
+        <div class="aboutMe">
+          <h1>About Me</h1>
+        </div>
+
         <div id="message" class="white-text"></div>
       </div>
     </section>
     <section id="skills">
       <div class="skillsWrapper">
-        <h1 class="white-text">Skills</h1>
+        <div class="skills">
+          <h1 class="white-text">Skills</h1>
+        </div>
         <div id="message" class="white-text"></div>
       </div>
     </section>
-    <section id="projects" class="grey lighten-3">
+
+    <!-- ___________________projects section -->
+    <section id="projects">
       <div class="projectsWrapper">
-        <h1>Projects</h1>
+        <div class="projects">
+          <h1 class="deep-purple-text">Projects</h1>
+          <div class="gallary">
+            <div class="gallaryNav">
+              <button class="projectBtn" data-filter="all">All</button>
+              <button class="projectBtn" data-filter=".node">Node.js</button>
+              <button class="projectBtn" data-filter=".react">React.js</button>
+              <button class="projectBtn" data-filter=".angular">Angular</button>
+              <button class="projectBtn" data-filter=".python">Python/Django</button>
+            </div>
+            <div class="gallaryShowcase">
+              <div class="mix node react project">
+                <div class="projectInfo">
+                    <h4>ListMas</h4>
+                    <h6><em>JavaScript | React.js | Node.js | MongoDB</em></h6>
+                    <a href="#projects" class="projectLink">Read More</a>
+                </div>
+                <div class="projectImg">
+                  <img src="./portfolio/img/projectImg/listMas.png" alt="">
+                </div>
+                
+              </div>
+              <div class="mix node angular project">
+                <div class="projectInfo">
+                  <h4>1-Up</h4>
+                  <h6><em>JavaScript | Angular | Node.js | MongoDB</em></h6>
+                  <a href="#projects" class="projectLink">Read More</a>
+                </div>
+                <div class="projectImg">
+                  <img src="./portfolio/img/projectImg/oneUp.png" alt="">
+                </div>
+              </div>
+              <div class="mix python project">
+                <div class="projectInfo">
+                  <h4>The Ktchen Sync</h4>
+                  <h6><em>Python | Django | MySQL</em></h6>
+                  <a href="#projects" class="projectLink">Read More</a>
+                </div>
+                <div class="projectImg">
+                  <img src="./portfolio/img/projectImg/kitchenSync.png" alt="">
+                </div>
+              </div>
+              <div class="mix angular project">
+                <div class="projectInfo">
+                    <h4>StarWars API</h4>
+                    <h6><em>JavaScript | Angular | StarWars API</em></h6>
+                    <a href="#projects" class="projectLink">Read More</a>
+                </div>
+                <div class="projectImg">
+                  <img src="./portfolio/img/projectImg/SWAPI.png" alt="">
+                </div>
+              </div>
+              <div class="mix angular project">
+                <div class="projectInfo">
+                    <h4>Ng Weather</h4>
+                    <h6><em>JavaScript | Angular | WeatherAPI</em></h6>
+                    <a href="#projects" class="projectLink">Read More</a>
+                </div>
+                <div class="projectImg">
+                  <img src="./portfolio/img/projectImg/weatherAPI.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div id="message" class="white-text"></div>
       </div>
     </section>
@@ -127,49 +206,13 @@
       <p class="footerText">&copy; 2019 | Jared Avila</p>
     </footer>
 
-    <!-- modal section -->
-    <!-- <section id="modal">
-      <div class="modalWrapper">
-        <img src="./img/resume.png" alt="" />
-        <a href="#" class="btn teal">Download</a>
-      </div>
-    </section> -->
-
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script src="./portfolio/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="./portfolio/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
     <script src="./portfolio/js/script.js"></script>
-    <script>
-      $(document).ready(function() {
-        // Init Sidenav
-        $(".button-collapse").sideNav();
-
-        // Init Scrollspy
-        $(".scrollspy").scrollSpy();
-
-        // ScrollFire
-        const options = [
-          {
-            selector: ".main-text",
-            offset: 0,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          },
-          {
-            selector: ".navbar-fixed",
-            offset: 1000,
-            callback: function() {
-              $("nav").removeClass("transparent");
-              $("nav").addClass("grey darken-1");
-            }
-          }
-        ];
-
-        Materialize.scrollFire(options);
-      });
-    </script>
   </body>
 </html>

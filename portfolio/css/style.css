@@ -3,9 +3,17 @@
     padding: 0;
 }
 
+/* Navigation */
+
 #logo {
     font-size: 2.4rem;
 }
+
+#navbar {
+    transition: all 600ms ease-in-out;
+}
+
+/* landing page */
 
 header {
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/computer.jpg');
@@ -54,9 +62,10 @@ i.downArrow {
 
 .aboutWrapper {
     padding: 300px;
-    background: url('../img/LogoMakr_6PSRnI.png');
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.aboutMe, .main-text, .skills, .projects {
+    opacity: 0;
 }
 
 /* skills section */
@@ -71,8 +80,95 @@ i.downArrow {
 
 /* projects section */
 
+#projects {
+    background-color: rgb(224, 224, 224);
+}
+
 .projectsWrapper {
-    padding: 300px;
+    padding: 100px 150px;
+    background: url('../img/LogoMakr_6PSRnI.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.gallaryNav {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.projectBtn {
+    padding: 0 2rem;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 1.4em;
+    background-color: grey;
+}
+
+.gallaryShowcase {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects h1 {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.project {
+    width: 300px;
+    height: 240px;
+    margin: 5px;
+    box-shadow: 2px 2px 6px rgb(70, 70, 70);
+    background-color: rgb(240, 240, 240);
+}
+
+.projectInfo {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
+
+.projectImg {
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    color: #2ab7a9;
+    background-color: white;
+}
+
+.projectImg img {
+    width: 300px;
+    height: 180px;
+    filter: brightness(70%);
+}
+
+.projectInfo h6 {
+    margin-bottom: 90px;
+}
+
+.projectLink {
+    padding: 5px 20px;
+    border: 2px solid #2ab7a9;
+    width: fit-content;
+    border-radius: 4px;
+    color: black;
+    transition: all 250ms ease;
+}
+
+.projectLink:hover {
+    background-color: #2ab7a9;
+    color: white;
 }
 
 /* footer section */
@@ -81,29 +177,13 @@ i.downArrow {
     padding: 70px 20px
 }
 
-/* modal section */
-
-.modalWrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    width: fit-content;
-    margin: auto;
-    background-color: rgb(34, 34, 34);
-    border-radius: 6px;
-    align-items: center;
-}
-
-.modalWrapper img {
-    height: 70vh;
-    /* width: fit-content; */
-}
-
-.modalWrapper a {
-    margin: 20px;
-}
-
 /* Mobile styles */
+
+@media only screen and (max-width: 970px) {
+    .projectsWrapper {
+        padding: 50px 0;
+    }
+}
 
 @media only screen and (max-width: 700px) {
     .title {
@@ -122,7 +202,16 @@ i.downArrow {
     .skillsWrapper {
         padding: 300px 0;
     }
+    /* projects section */
+    .projectBtn {
+        padding: 0 .5rem;
+        font-size: .8em;
+    }
     .projectsWrapper {
-        padding: 300px 0;
+        padding: 100px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
     }
 }
