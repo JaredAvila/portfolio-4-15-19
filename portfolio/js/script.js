@@ -17,8 +17,15 @@ $(document).ready(function() {
       }
     },
     {
-      selector: ".aboutMe",
+      selector: ".aboutIntro",
       offset: 150,
+      callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }
+    },
+    {
+      selector: ".aboutTwo",
+      offset: 300,
       callback: function(el) {
         Materialize.fadeInImage($(el));
       }
@@ -32,7 +39,7 @@ $(document).ready(function() {
     },
     {
       selector: ".projects",
-      offset: 150,
+      offset: 200,
       callback: function(el) {
         Materialize.fadeInImage($(el));
       }

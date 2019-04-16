@@ -61,11 +61,50 @@ i.downArrow {
 /* about me section */
 
 .aboutWrapper {
-    padding: 300px;
+    padding: 100px;
 }
 
-.aboutMe, .main-text, .skills, .projects {
+.aboutIntro, .aboutTwo, .main-text, .skills, .projects {
     opacity: 0;
+}
+
+.aboutIntro, .aboutTwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.aboutInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutInfo p {
+    padding: 10px 0;
+}
+
+.aboutInfo h4 {
+    text-align: center;
+    border-left: 4px solid rgb(0, 173, 173);
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.aboutInfo h5 {
+    text-align: right;
+    color: rgb(126, 126, 126);
+}
+
+.aboutImg img {
+    border-radius: 6px;
+    width: 300px;
+}
+
+.aboutInfo img {
+    border-radius: 50%;
+    width: 150px;
+    margin: 0 auto;
 }
 
 /* skills section */
@@ -109,6 +148,7 @@ i.downArrow {
 
 .gallaryShowcase {
     width: 80%;
+    height: 600px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -179,9 +219,50 @@ i.downArrow {
 
 /* Mobile styles */
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1480px) {
     .projectsWrapper {
         padding: 50px 0;
+    }
+    .aboutImg img {
+        border-radius: 6px;
+        width: 200px;
+    }
+    .aboutInfo h2 {
+        font-size: 2rem;
+    }
+    .aboutInfo h4 {
+        font-size: 1.6rem;
+    }
+    .aboutInfo h5 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .gallaryShowcase {
+        height: 900px;
+    }
+    .aboutImg img {
+        border-radius: 6px;
+        width: 150px;
+    }
+    .aboutInfo p {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 792px) {
+    .gallaryShowcase {
+        height: fit-content;
+    }
+    .aboutImg img {
+        border-radius: 6px;
+        width: 100px;
+    }
+    .aboutInfo {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -197,10 +278,17 @@ i.downArrow {
         margin-bottom: 50px;
     }
     .aboutWrapper {
-        padding: 300px 0;
+        padding: 100px 0;
     }
     .skillsWrapper {
         padding: 300px 0;
+    }
+    /* about me section */
+    .aboutImg img {
+        display: none;
+    }
+    .aboutInfo {
+        width: 90%;
     }
     /* projects section */
     .projectBtn {
