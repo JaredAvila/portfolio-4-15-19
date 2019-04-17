@@ -1,6 +1,40 @@
 // xxxxxxxxxxxxxxxxxxxxxxxxxx  jQuery xxxxxxxxxxxxxxxxxxxxxx
 
 $(document).ready(function() {
+  // ----------------------------Skills icons
+  $("#langCont").hover(
+    () => {
+      $("#langIcons").animate({ opacity: "1" }, 200);
+    },
+    () => {
+      $("#langIcons").animate({ opacity: "0" }, 100);
+    }
+  );
+  $("#libCont").hover(
+    () => {
+      $("#libIcons").animate({ opacity: "1" }, 200);
+    },
+    () => {
+      $("#libIcons").animate({ opacity: "0" }, 100);
+    }
+  );
+  $("#frameCont").hover(
+    () => {
+      $("#frameIcons").animate({ opacity: "1" }, 200);
+    },
+    () => {
+      $("#frameIcons").animate({ opacity: "0" }, 100);
+    }
+  );
+  $("#dataCont").hover(
+    () => {
+      $("#dataIcons").animate({ opacity: "1" }, 200);
+    },
+    () => {
+      $("#dataIcons").animate({ opacity: "0" }, 100);
+    }
+  );
+
   // -------------------------- Sidenav
   $(".button-collapse").sideNav();
 

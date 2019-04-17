@@ -27,7 +27,7 @@
     <header class="main-header">
       <div class="primary-overlay">
         <div class="navbar-fixed">
-          <!-- main nav -->
+          <!-- --------------------------------------------- main nav -->
           <nav class="transparent" id="navbar">
             <div class="container">
               <div class="nav-wrapper">
@@ -48,13 +48,16 @@
                     <a href="#">Home</a>
                   </li>
                   <li>
-                    <a href="#about">About</a>
+                    <a href="#aboutMe">About</a>
                   </li>
                   <li>
                     <a href="#projects">Projects</a>
                   </li>
                   <li>
-                    <a href="#resume">Resume</a>
+                    <a href="#skills">Skills</a>
+                  </li>
+                  <li>
+                    <a href="./portfolio/img/JaredAvilaResume.pdf">Resume</a>
                   </li>
                   <li>
                     <a
@@ -69,7 +72,7 @@
             </div>
           </nav>
         </div>
-        <!-- Side nav -->
+        <!-- --------------------------------------------- Side nav -->
         <ul class="side-nav" id="mobile-nav">
           <h4 class="deep-purple lighten-2 center">Jared Avila</h4>
           <li>
@@ -79,14 +82,16 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#aboutMe">About</a>
           </li>
-
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
           <li>
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href="./portfolio/img/JaredAvilaResume.pdf">Resume</a>
           </li>
           <li>
             <a href="https://www.jaredavila.com/avilamedia">Hire Me</a>
@@ -96,10 +101,10 @@
           <h2 id="intro1" class="white-text"></h2>
           <h4 id="intro2" class="white-text"></h4>
           <div class="socialMedia main-text">
-            <a href="#"
+            <a href="https://github.com/JaredAvila"
               ><i class="fab fa-github fa-3x deep-purple-text socialLinks"></i
             ></a>
-            <a href="#"
+            <a href="https://www.linkedin.com/in/jared-avila/"
               ><i class="fab fa-linkedin fa-3x deep-purple-text socialLinks"></i
             ></a>
           </div>
@@ -111,10 +116,10 @@
         </div>
       </div>
     </header>
-    <!-- ____________________________about me section -->
+    <!-- --------------------------------------------- about me section -->
     <section id="about">
       <div class="aboutWrapper">
-        <div class="aboutMe">
+        <div id="aboutMe" class="aboutMe scrollspy">
           <div class="aboutIntro">
             <div class="aboutInfo">
                 <img src="./portfolio//img/aboutImg/meToo.jpg" alt="">
@@ -144,17 +149,106 @@
         </div>
       </div>
     </section>
-    <section id="skills">
+    <!-- ------------------------------------------ skills section -->
+    <section id="skillsSection">
       <div class="skillsWrapper">
+        <h2 id="skills"  class="scrollspy">Skills</h2>
         <div class="skills">
-          <h1 class="white-text">Skills</h1>
+          <div>
+            <h4>Languages</h4>
+            <div class="buttonWrap" id="langCont">
+                <i class="material-icons">
+                    arrow_downward
+                    </i>
+            </div>
+            <div class="icons" id="langIcons">
+              <img src="./portfolio/img/skillsImg/javascript.png" alt="">
+              <img src="./portfolio/img/skillsImg/python.jpg" alt="">
+              <img src="./portfolio/img/skillsImg/typescript.png" alt="">
+              <img src="./portfolio/img/skillsImg/Java.jpg" alt="">
+              <img src="./portfolio/img/skillsImg/css.jpg" alt="">
+              <img src="./portfolio/img/skillsImg/html.jpg" alt="">
+            </div>
+          </div>
+          <div>
+            <h4>Libraries</h4>
+            <div class="buttonWrap" id="libCont">
+                <i class="material-icons">
+                    arrow_downward
+                    </i>
+            </div>
+            <div class="icons" id="libIcons">
+              <img src="./portfolio/img/skillsImg/react.png" alt="">
+              <img src="./portfolio/img/skillsImg/redux.png" alt="">
+              <img src="./portfolio/img/skillsImg/express.png" alt="">
+              <img src="./portfolio/img/skillsImg/jquery.png" alt="">
+            </div>
+          </div>
+          <div>
+            <h4>Frameworks</h4>
+            <div class="buttonWrap" id="frameCont">
+                <i class="material-icons">
+                    arrow_downward
+                    </i>
+            </div>
+            <div class="icons" id="frameIcons">
+              <img src="./portfolio/img/skillsImg/angular.png" alt="">
+              <img src="./portfolio/img/skillsImg/node.jpg" alt="">
+              <img src="./portfolio/img/skillsImg/django.png" alt="">
+              <img src="./portfolio/img/skillsImg/flask.png" alt="">
+              <img src="./portfolio/img/skillsImg/springboot.png" alt="">
+            </div>
+          </div>
+          <div>
+            <h4>Databases</h4>
+            <div class="buttonWrap" id="dataCont">
+                <i class="material-icons">
+                    arrow_downward
+                    </i>
+            </div>
+            <div class="icons" id="dataIcons">
+              <img src="./portfolio/img/skillsImg/mySQL.png" alt="">
+              <img src="./portfolio/img/skillsImg/MongoDB.png" alt="">
+            </div>
+          </div>
         </div>
-        <div id="message" class="white-text"></div>
+        <div class="mobileSkillsSection">
+            <h5>Languages</h5>
+            <div class="iconsMobile">
+                <img src="./portfolio/img/skillsImg/javascript.png" alt="">
+                <img src="./portfolio/img/skillsImg/python.jpg" alt="">
+                <img src="./portfolio/img/skillsImg/typescript.png" alt="">
+                <img src="./portfolio/img/skillsImg/Java.jpg" alt="">
+                <img src="./portfolio/img/skillsImg/css.jpg" alt="">
+                <img src="./portfolio/img/skillsImg/html.jpg" alt="">
+            </div>
+            <h5>Libraries</h5>
+            <div class="iconsMobile">
+                <img src="./portfolio/img/skillsImg/react.png" alt="">
+                <img src="./portfolio/img/skillsImg/redux.png" alt="">
+                <img src="./portfolio/img/skillsImg/express.png" alt="">
+                <img src="./portfolio/img/skillsImg/jquery.png" alt="">
+            </div>
+            <h5>Frameworks</h5>
+            <div class="iconsMobile">
+                <img src="./portfolio/img/skillsImg/angular.png" alt="">
+                <img src="./portfolio/img/skillsImg/node.jpg" alt="">
+                <img src="./portfolio/img/skillsImg/django.png" alt="">
+                <img src="./portfolio/img/skillsImg/flask.png" alt="">
+                <img src="./portfolio/img/skillsImg/springboot.png" alt="">
+            </div>
+            <h5>Databases</h5>
+            <div class="iconsMobile">
+                <img src="./portfolio/img/skillsImg/mySQL.png" alt="">
+                <img src="./portfolio/img/skillsImg/MongoDB.png" alt="">
+            </div>
+        </div>
+        
       </div>
     </section>
 
-    <!-- ___________________projects section -->
-    <section id="projects">
+    <!-- ------------------------------------------------ projects section -->
+    <section id="projects"  class="scrollspy">
       <div class="projectsWrapper">
         <div class="projects">
           <h1 class="deep-purple-text">Projects</h1>
@@ -176,7 +270,6 @@
                 <div class="projectImg">
                   <img src="./portfolio/img/projectImg/listMas.png" alt="">
                 </div>
-                
               </div>
               <div class="mix node angular project">
                 <div class="projectInfo">
@@ -200,9 +293,9 @@
               </div>
               <div class="mix angular project">
                 <div class="projectInfo">
-                    <h4>StarWars API</h4>
-                    <h6><em>JavaScript | Angular | StarWars API</em></h6>
-                    <a href="#projects" class="projectLink">Read More</a>
+                  <h4>StarWars API</h4>
+                  <h6><em>JavaScript | Angular | StarWars API</em></h6>
+                  <a href="#projects" class="projectLink">Read More</a>
                 </div>
                 <div class="projectImg">
                   <img src="./portfolio/img/projectImg/SWAPI.png" alt="">
@@ -210,9 +303,9 @@
               </div>
               <div class="mix angular project">
                 <div class="projectInfo">
-                    <h4>Ng Weather</h4>
-                    <h6><em>JavaScript | Angular | WeatherAPI</em></h6>
-                    <a href="#projects" class="projectLink">Read More</a>
+                  <h4>Ng Weather</h4>
+                  <h6><em>JavaScript | Angular | WeatherAPI</em></h6>
+                  <a href="#projects" class="projectLink">Read More</a>
                 </div>
                 <div class="projectImg">
                   <img src="./portfolio/img/projectImg/weatherAPI.png" alt="">
@@ -221,8 +314,6 @@
             </div>
           </div>
         </div>
-        
-        <div id="message" class="white-text"></div>
       </div>
     </section>
     <footer class="grey darken-3 white-text">
