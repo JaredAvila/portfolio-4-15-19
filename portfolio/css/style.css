@@ -266,6 +266,11 @@ i.downArrow {
     color: white;
 }
 
+.projLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* ----------------------- footer section ------------------------------ */
 
 .footerText {
