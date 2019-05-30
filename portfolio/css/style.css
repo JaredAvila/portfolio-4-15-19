@@ -203,7 +203,7 @@ i.downArrow {
 
 .gallaryShowcase {
     width: 80%;
-    height: 600px;
+    height: fit-content;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
